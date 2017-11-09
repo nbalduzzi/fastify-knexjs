@@ -15,6 +15,6 @@ Knex client DB configuration JSON object.
 
 http://knexjs.org/#Installation-client
 
-# Version
+## Version
 
-1.0.0
+v1.0.0
