@@ -1,0 +1,32 @@
+{
+  "name": "fastify-knex",
+  "version": "1.0.0",
+  "description": "Fastify KnexJS Plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chapuletta/fastify-knex.git"
+  },
+  "keywords": [
+    "Fastify",
+    "KnexJS",
+    "Plugin",
+    "Test"
+  ],
+  "author": "Chapuletta - nico.balduzzi@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chapuletta/fastify-knex/issues"
+  },
+  "homepage": "https://github.com/chapuletta/fastify-knex#readme",
+  "dependencies": {
+    "fastify-plugin": "^0.1.1",
+    "knex": "^0.14.0"
+  },
+  "devDependencies": {
+    "fastify": "^0.33.0"
+  }
+}
