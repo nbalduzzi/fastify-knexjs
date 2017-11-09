@@ -18,4 +18,4 @@ http://knexjs.org/#Installation-client
 v1.0.0
 
 ## Author
-Nicolás Martín Balduzzi
+Chapuletta
