@@ -24,7 +24,7 @@ v1.0.0
 
 ## Author
 
-- [Chapuletta](nico.balduzzi@gmail.com)
+[Nicolás Balduzzi](nico.balduzzi@gmail.com)
 
 ## License
 
