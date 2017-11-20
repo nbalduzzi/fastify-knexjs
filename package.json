@@ -4,7 +4,7 @@
   "description": "Fastify KnexJS Plugin",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && tap test.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,9 @@
     "knex": "^0.14.0"
   },
   "devDependencies": {
-    "fastify": "^0.33.0"
+    "fastify": "^0.33.0",
+    "mysql": "^2.15.0",
+    "standard": "^10.0.3",
+    "tap": "^10.7.3"
   }
 }
