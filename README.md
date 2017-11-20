@@ -1,6 +1,6 @@
 # Fastify KnexJS Plugin
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Build Status](https://travis-ci.org/chapuletta/fastify-knex.svg?branch=master)](https://travis-ci.org/chapuletta/fastify-knex)
 
 ## Usage
