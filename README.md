@@ -1,12 +1,18 @@
 # Fastify KnexJS Plugin
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![Build Status](https://travis-ci.org/chapuletta/fastify-knex.svg?branch=master)](https://travis-ci.org/chapuletta/fastify-knex)
+[![Build Status](https://travis-ci.org/chapuletta/fastify-knexjs.svg?branch=master)](https://travis-ci.org/chapuletta/fastify-knexjs)
+
+## Installation
+
+```
+npm install fastify-knexjs --save
+```
 
 ## Usage
 
 ```
-fastify.register(require('fastify-knex'), options, err => console.error(err))
+fastify.register(require('fastify-knexjs'), options, err => console.error(err))
 
 fastify.get('/', (request, reply) => {
   console.log(fastify.knex) // Knex DB instance
@@ -15,7 +21,7 @@ fastify.get('/', (request, reply) => {
 
 ## Options
 
-Knex client DB configuration JSON object.
+KnexJS client DB configuration JSON object.
 
 http://knexjs.org/#Installation-client
 

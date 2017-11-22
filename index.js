@@ -3,7 +3,7 @@
 const fastifyPlugin = require('fastify-plugin')
 const knex = require('knex')
 
-const fastifyKnex = (fastify, opts, next) => {
+const fastifyKnexJS = (fastify, opts, next) => {
   try {
     const handler = knex(opts)
     fastify.decorate('knex', handler)
@@ -13,4 +13,4 @@ const fastifyKnex = (fastify, opts, next) => {
   }
 }
 
-module.exports = fastifyPlugin(fastifyKnex, '>=0.30.0')
+module.exports = fastifyPlugin(fastifyKnexJS, '>=0.30.0')
