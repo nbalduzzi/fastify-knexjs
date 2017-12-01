@@ -15,6 +15,7 @@ tap.test('fastify.knex should exist', test => {
   fastify.ready(err => {
     test.error(err)
     test.ok(fastify.knex)
+    test.end()
 
     fastify.close()
   })
