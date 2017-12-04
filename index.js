@@ -9,7 +9,7 @@ function fastifyKnexJS (fastify, opts, next) {
     fastify.decorate('knex', handler)
     next()
   } catch (err) {
-    next(new Error(err))
+    next(err)
   }
 }
 
