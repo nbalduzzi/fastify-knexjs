@@ -25,10 +25,6 @@ KnexJS client DB configuration JSON object.
 
 http://knexjs.org/#Installation-client
 
-## Version
-
-v1.0.0
-
 ## Author
 
 [Nicolás Balduzzi](nico.balduzzi@gmail.com)
