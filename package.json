@@ -1,6 +1,6 @@
 {
   "name": "fastify-knexjs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Fastify KnexJS Plugin",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chapuletta/fastify-knexjs.git"
+    "url": "git+https://github.com/nbalduzzi/fastify-knexjs.git"
   },
   "keywords": [
     "Fastify",
@@ -16,12 +16,12 @@
     "Plugin",
     "Test"
   ],
-  "author": "Chapuletta - nico.balduzzi@gmail.com",
+  "author": "Nicolas Balduzzi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chapuletta/fastify-knexjs/issues"
+    "url": "https://github.com/nbalduzzi/fastify-knexjs/issues"
   },
-  "homepage": "https://github.com/chapuletta/fastify-knexjs#readme",
+  "homepage": "https://github.com/nbalduzzi/fastify-knexjs#readme",
   "dependencies": {
     "fastify-plugin": "^1.0.1",
     "knex": "^0.14.6"
