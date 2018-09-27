@@ -25,7 +25,7 @@ fastify.get('/', (request, reply) => {
 
 KnexJS client DB configuration JSON object.
 
-http://knexjs.org/#Installation-client
+<http://knexjs.org/#Installation-client>
 
 ## Author
 
