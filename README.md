@@ -7,13 +7,13 @@
 
 ## Installation
 
-```
+```bash
 npm install fastify-knexjs --save
 ```
 
 ## Usage
 
-```
+```javascript
 fastify.register(require('fastify-knexjs'), options, err => console.error(err))
 
 fastify.get('/', (request, reply) => {

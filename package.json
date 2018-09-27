@@ -1,35 +1,35 @@
 {
-  "name": "fastify-knexjs",
-  "version": "1.0.12",
-  "description": "Fastify KnexJS Plugin",
-  "main": "index.js",
-  "scripts": {
-    "test": "eslint ./ && tap test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nbalduzzi/fastify-knexjs.git"
-  },
-  "keywords": [
-    "Fastify",
-    "KnexJS",
-    "Plugin",
-    "Test"
-  ],
-  "author": "Nicolas Balduzzi",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nbalduzzi/fastify-knexjs/issues"
-  },
-  "homepage": "https://github.com/nbalduzzi/fastify-knexjs#readme",
-  "dependencies": {
-    "fastify-plugin": "^1.0.1",
-    "knex": "^0.14.6"
-  },
-  "devDependencies": {
-    "eslint": "^5.6.0",
-    "fastify": "^1.4.0",
-    "mysql": "^2.15.0",
-    "tap": "^12.0.1"
-  }
+	"name": "fastify-knexjs",
+	"version": "1.0.13",
+	"description": "Fastify KnexJS Plugin",
+	"main": "index.js",
+	"scripts": {
+		"test": "eslint ./ && tap test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nbalduzzi/fastify-knexjs.git"
+	},
+	"keywords": [
+		"Fastify",
+		"KnexJS",
+		"Plugin",
+		"Test"
+	],
+	"author": "Nicolas Balduzzi",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/nbalduzzi/fastify-knexjs/issues"
+	},
+	"homepage": "https://github.com/nbalduzzi/fastify-knexjs#readme",
+	"dependencies": {
+		"fastify-plugin": "^1.0.1",
+		"knex": "^0.14.6"
+	},
+	"devDependencies": {
+		"eslint": "^5.6.0",
+		"fastify": "^1.4.0",
+		"mysql": "^2.15.0",
+		"tap": "^12.0.1"
+	}
 }
