@@ -13,6 +13,6 @@
   },
   "rules": {
     "no-console": ["error", { "allow": ["warn", "error"] }],
-    "semi": [2, "never"]
+    "semi": [2, "always"]
   }
 }
