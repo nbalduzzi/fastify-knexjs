@@ -1,6 +1,6 @@
 {
 	"name": "fastify-knexjs",
-	"version": "1.0.14",
+	"version": "1.0.15",
 	"description": "Fastify KnexJS Plugin",
 	"main": "index.js",
 	"scripts": {
@@ -30,6 +30,6 @@
 		"eslint": "^6.5.1",
 		"fastify": "^2.10.0",
 		"mysql": "^2.17.1",
-		"tap": "^14.6.9"
+		"tap": "^14.10.7"
 	}
 }
