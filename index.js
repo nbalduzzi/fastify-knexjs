@@ -6,7 +6,12 @@ const knex = require('knex');
 function fastifyKnexJS(fastify, opts, next) {
   try {
     const handler = knex(opts);
-    fastify.decorate('knex', handler);
+    fastify
+      .decorate('knex', handler)
+      .addHook('onClose', async (instance, done) => {
+        await handler.destroy();
+        done();
+      });
     next();
   } catch (err) {
     next(err);
