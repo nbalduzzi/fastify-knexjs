@@ -14,11 +14,13 @@ npm install fastify-knexjs --save
 ## Usage
 
 ```javascript
-fastify.register(require('fastify-knexjs'), options, err => console.error(err))
+fastify.register(require('fastify-knexjs'), options, (err) =>
+  console.error(err)
+);
 
 fastify.get('/', (request, reply) => {
-  console.log(fastify.knex) // Knex DB instance
-})
+  console.log(fastify.knex); // Knex DB instance
+});
 ```
 
 ## Options

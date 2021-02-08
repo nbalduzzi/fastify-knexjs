@@ -18,18 +18,51 @@
   },
   "license": "MIT",
   "author": "Nicolas Balduzzi",
+  "contributors": [
+    "Patrick Heneise (https://github.com/PatrickHeneise)"
+  ],
   "main": "index.js",
   "scripts": {
+    "lint": "eslint . --ext js",
     "test": "eslint ./ && tap test.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write"
+    ],
+    "*.{js}": [
+      "eslint --cache --fix"
+    ]
   },
   "dependencies": {
     "fastify-plugin": "^3.0.0",
     "knex": "^0.21.17"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "eslint": "^7.19.0",
     "fastify": "^3.11.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
     "mysql": "^2.18.1",
+    "prettier": "^2.2.1",
     "tap": "^14.11.0"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   }
 }

@@ -8,8 +8,8 @@ tap.test('fastify.knex should exist', (test) => {
   fastify.register(fastifyKnexJS, {
     client: 'mysql',
     connection: {
-      host: '127.0.0.1',
-    },
+      host: '127.0.0.1'
+    }
   });
 
   fastify.ready((err) => {
