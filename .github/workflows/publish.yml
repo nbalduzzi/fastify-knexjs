@@ -11,6 +11,7 @@ jobs:
       CI: true
       NODE_ENV: test
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     runs-on: ubuntu-latest
 
