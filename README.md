@@ -34,6 +34,10 @@ KnexJS client DB configuration JSON object.
 
 [Nicolás Balduzzi](nico.balduzzi@gmail.com)
 
+## Contributors
+
+[Patrick Heneise](https://github.com/PatrickHeneise)
+
 ## License
 
 Licensed under [MIT](./LICENSE).
