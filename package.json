@@ -1,6 +1,6 @@
 {
   "name": "fastify-knexjs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Fastify KnexJS Plugin",
   "keywords": [
     "Fastify",
