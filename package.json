@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "fastify-plugin": "^3.0.0",
-    "knex": "^0.21.17"
+    "knex": "^0.95.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
