@@ -5,17 +5,18 @@ const knex = require('knex');
 
 function fastifyKnexJS(fastify, opts, next) {
   try {
-    const handler = knex(opts)
+    const handler = knex(opts);
     fastify
       .decorate('knex', handler)
       .addHook('onClose', (instance, done) => {
         if (instance.knex === handler) {
-          instance.knex.destroy()
-          delete instance.knex
+          instance.knex.destroy();
+          delete instance.knex;
         }
-        done()
-      })
-    next()
+
+        done();
+      });
+    next();
   } catch (err) {
     next(err);
   }
