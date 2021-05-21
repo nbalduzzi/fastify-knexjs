@@ -1,0 +1,31 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!master'
+
+jobs:
+  publish:
+    env:
+      CI: true
+      NODE_ENV: test
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['10', '12', '14']
+    name: Node ${{ matrix.node }} Test
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test

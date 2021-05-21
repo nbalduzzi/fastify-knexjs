@@ -1,0 +1,31 @@
+name: Semantic Release
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  publish:
+    env:
+      CI: true
+      NODE_ENV: test
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+      - name: Semantic Release
+        run: npx semantic-release
